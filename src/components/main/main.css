@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
 .main{
     flex: 1;
     min-height: 100vh;
@@ -154,3 +155,110 @@ animation: loader 4s infinite linear;
     font-weight: 300px;
     line-height: 1.8;
 }
+
+@media (max-width: 1200px) {
+    .main-container .greet {
+      font-size: 48px;
+    }
+  
+    .main .nav {
+      font-size: 20px;
+      padding: 15px;
+    }
+  
+    .result-data p {
+      font-size: 16px;
+    }
+  }
+  
+  @media (max-width: 992px) {
+    .main-container .greet {
+      font-size: 42px;
+    }
+  
+    .main .nav {
+      font-size: 18px;
+      padding: 10px;
+    }
+  
+    .result-data p {
+      font-size: 15px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .main-container .greet {
+      font-size: 36px;
+    }
+  
+    .main .nav {
+      flex-direction: column;
+      font-size: 16px;
+      padding: 10px;
+    }
+  
+    .main .cards {
+      grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    }
+  
+    .main .card {
+      height: 180px;
+    }
+  
+    .result-data p {
+      font-size: 14px;
+    }
+  
+    .search-box {
+      flex-direction: column;
+      gap: 10px;
+    }
+  
+    .search-box input {
+      width: 100%;
+    }
+  
+    .search-box div {
+      justify-content: center;
+    }
+  
+    .main .bottom-info {
+      font-size: 12px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .main-container .greet {
+      font-size: 28px;
+    }
+  
+    .main .nav {
+      font-size: 14px;
+      padding: 5px;
+    }
+  
+    .main .cards {
+      grid-template-columns: 1fr;
+      gap: 10px;
+    }
+  
+    .main .card {
+      height: 150px;
+    }
+  
+    .result-data p {
+      font-size: 13px;
+    }
+  
+    .search-box {
+      gap: 5px;
+    }
+  
+    .search-box input {
+      font-size: 16px;
+    }
+  
+    .main .bottom-info {
+      font-size: 10px;
+    }
+  }

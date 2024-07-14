@@ -1,3 +1,8 @@
+
+
+// node --version # Should be >= 18
+// npm install @google/generative-ai
+
 import {
     GoogleGenerativeAI,
     HarmCategory,
@@ -50,4 +55,4 @@ import {
     return response.text();
   }
   
-   export default runChat;
+export default runChat;
